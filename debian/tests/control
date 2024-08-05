@@ -1,0 +1,3 @@
+Tests: upstream-unit-tests 
+Depends: @, @builddeps@, ca-certificates, glib-networking
+Restrictions: allow-stderr
