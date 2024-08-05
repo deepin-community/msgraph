@@ -1,0 +1,23 @@
+> GET /v1.0/me/drives HTTP/2
+> Soup-Debug-Timestamp: 1715762855
+> Soup-Debug: SoupSession 1 (0x1029050), SoupMessage 1 (0x1e575d0), GSocket 1 (0x1e75eb0)
+> Soup-Host: graph.microsoft.com
+> Authorization: Bearer EwB4A8l6BAAUbDba3x2OMJElkF7gJ4z/VbCPEz0AAdIxzxcQuYttSr6lATXdw/BHsM5ptTSicVcI8tNNyCW2ooQII/vWP+RrFAa7yM0eWCMuvNj1+MPWBJ9q/g55X9ZWjRMAuMRJdUnXkpTTU2imFyUYbjNrGxZWJnfT3wqiuOy9gtSryF5UXqcNgtxJe1bBVDKcyTKyWZIFauJzoCkOyvv/MrEPmZWc217KDjZ5Egd9zKL+t2TIwFxVGMnQHBcz0kWgdSBe+kBn+2eInLaF/vkn6Z2WITfL9Gs+WHLOkuNfKidzqVqORW5AMg7cNXx9hFoye7kRHCMziCQ6vYhd2x0dRq8biMihcsnrwuDJfit4Pi7ORFfPrW1pOvEaTkcDZgAACEikrRIIKPu4SAIcVrwe4bk+CXAfmWmNQnzuDqTQ/TrudNtJNN6mdryfE9dsYe81BAffJyd3hZOR9CmNs25Oyoj+H6ZSLd9z42ldKYxB7GDdkFgW0kIBBjo+SmE+yILaklVHPGGbu3cd3QFMSlaCoru8PxPk+qn25QzRA0gmx/oHOi6Tht+GJsk7HDXb5UnEtCFp13imcWCXMNioX8YwCTIcKb2OE2U6IAOGDP7+oBVlEqOhPCGOYlkeg0FWTOErM2dosqvO+LinDOty35KNrzqzhpxByYwasEcO40WBjLPyrhvCmmWUclRzH3Rf8rfv9Xuw6D4SoHg384qlxhsgyLXLu53iRN5WdQ2EHKBDGs/gcGlABW9q8BbNAoNkcv/30zFSaHAt8ufFA2bPW8uimkk99CuVDPbyhLSj+CEL73CLYcGmfY1eZBjGfG33D6HwNE/9ysKA6vHkD0RPWtz0jgLSyYbu+L5TOirM2BAxCjrD9zZoLUKMkmISfPqdN/xSChIK4tukhIyXoQ6pNkGZU7von/4YI/r2HBEG/JMfVZ+4eJRftfggyM8de3gyV8PA4WRtzVoRYV1WZColQ3lUCfA8TL2gspBL1EMrXEpRcq0vQA7DghSSRpuDdkcALLsbqPih/oxHooeXh73vycRw8FDeUJMl3XfUejER/OhBLD9o09aKcIPGt2mM8IJsQ14Jw7vSBR+n5AOkkOXaZlMcVWyaUg9yZefyEObJ8rkRAy4Uo0QTP4kCH8cuohLtMMOPYKkXzuxQ9DcE4AlDOPNgNDOBRYgC
+> Accept-Encoding: gzip, deflate, br
+  
+< HTTP/2 200 OK
+< Soup-Debug-Timestamp: 1715762855
+< Soup-Debug: SoupMessage 1 (0x1e575d0)
+< Cache-Control: no-store
+< Content-Type: application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
+< Content-Encoding: gzip
+< Vary: Accept-Encoding
+< Date: Wed, 15 May 2024 08:47:34 GMT
+< strict-transport-security: max-age=31536000
+< request-id: d8886d33-7d67-4f37-b45c-b4715c3fb58d
+< client-request-id: d8886d33-7d67-4f37-b45c-b4715c3fb58d
+< x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"Germany West Central","Slice":"E","Ring":"4","ScaleUnit":"003","RoleInstance":"FR1PEPF00001145"}}
+< odata-version: 4.0
+< 
+< {"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#drives","value":[{"driveType":"personal","id":"4f62a7105c03556e","owner":{"user":{"displayName":"Jan Brummer","id":"4f62a7105c03556e"}},"quota":{"deleted":136152,"remaining":5367012672,"state":"normal","total":5368709120,"used":1696448,"storagePlanInformation":{"upgradeAvailable":true}}}]}
+  

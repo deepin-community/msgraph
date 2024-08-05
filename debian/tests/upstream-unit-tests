@@ -1,0 +1,11 @@
+#!/bin/sh -x
+printTestLog(){
+    cat meson-logs/testlog.txt
+}
+trap printTestLog INT QUIT ABRT PIPE TERM
+
+echo $PWD
+mkdir build &&
+meson build &&
+cd build &&
+meson test

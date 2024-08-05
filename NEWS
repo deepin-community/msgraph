@@ -1,0 +1,24 @@
+0.2.3 - Jun 18, 2024
+===========================
+ * Fix memory leaks
+ * Fix logger level warning
+
+0.2.2 - May 21, 2024
+===========================
+ * Add remote copy and move functions
+ * Drop Authorization header during download
+ * Fix browsing shared files
+
+0.2.1 - March 4, 2024
+===========================
+ * Fix header include leading to compilation problem
+ * Update uhttpmock requirement to pass tests
+
+0.2.0 - February 29, 2024
+===========================
+ * Fix memory leak in msg_service_parse_response
+ * Fix building with -Werror=format-security
+
+0.1.0 - February 13, 2024
+===========================
+ * Initial version

@@ -1,15 +1,66 @@
-Source: template-repository
-Section: unknown
+Source: msgraph
+Section: libs
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: Jeremy Bícha <jbicha@ubuntu.com>
+Build-Depends: at-spi2-core <!nocheck>,
+               debhelper-compat (= 13),
+               dh-sequence-gir,
+               gi-docgen,
+               libgoa-1.0-dev,
+               librest-dev,
+               libuhttpmock-dev (>= 0.11.0),
+               meson
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/gnome-team/msgraph
+Vcs-Git: https://salsa.debian.org/gnome-team/msgraph.git
+Homepage: https://gnome.pages.gitlab.gnome.org/msgraph/
 
-Package: template-repository
+Package: libmsgraph-0-1
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: library for accessing the Microsoft Graph API
+ libmsgraph is a GLib-based library for accessing online service APIs
+ using the Microsoft Graph protocol.
+
+Package: libmsgraph-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         gir1.2-msg-0 (= ${binary:Version}),
+         libmsgraph-0-1 (= ${binary:Version}),
+         libgoa-1.0-dev,
+         librest-dev,
+Suggests: libmsgraph-doc,
+Description: library for accessing the Microsoft Graph API - development files
+ libmsgraph is a GLib-based library for accessing online service APIs
+ using the Microsoft Graph protocol.
+ .
+ This package contains the development files.
+
+Package: libmsgraph-doc
+Section: doc
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: library for accessing the Microsoft Graph API - documentation
+ libmsgraph is a GLib-based library for accessing online service APIs
+ using the Microsoft Graph protocol.
+ .
+ This package contains the API reference.
+
+Package: gir1.2-msg-0
+Section: introspection
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${gir:Depends}
+Description: GObject introspection data for libmsgraph
+ This package contains GObject introspection information.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.

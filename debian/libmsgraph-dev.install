@@ -1,0 +1,4 @@
+usr/include/msg/
+usr/lib/*/libmsgraph*.so
+usr/lib/*/pkgconfig/msgraph-0.1.pc
+usr/share/gir-1.0/Msg-0.gir
