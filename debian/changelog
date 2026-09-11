@@ -1,3 +1,12 @@
+msgraph (0.2.3-2) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+  * d/control: add ca-certificates <!nocheck>: TLS tests abort with
+    "System trust contains zero trusted certificates" when the trust
+    store is missing in the build environment.
+
+ -- tunaichao <tunaichao@uniontech.com>  Fri, 11 Sep 2026 17:11:44 +0800
+
 msgraph (0.2.3-1) unstable; urgency=medium
 
   * New upstream release

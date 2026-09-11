@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: Jeremy Bícha <jbicha@ubuntu.com>
 Build-Depends: at-spi2-core <!nocheck>,
+               ca-certificates <!nocheck>,
                debhelper-compat (= 13),
                dh-sequence-gir,
                gi-docgen,
